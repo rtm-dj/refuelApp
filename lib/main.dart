@@ -214,7 +214,7 @@ class CustomBlocksWidget extends StatelessWidget {
                     ),
                   ],
                 ),
-                // Spacer для разделения и выравнивания с CircleAvatar
+
                 const Spacer(),
                 buttonState != 0
                 ? CircleAvatar(
