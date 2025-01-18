@@ -49,7 +49,7 @@ class HomePage extends StatelessWidget {
                         text: 'КОФЕ МАГАЗИН',
                         type: 1,
                         onTap: () {
-                          GoRouter.of(context).go('/pay');
+                          GoRouter.of(context).push('/pay');
                         },
                       ),
                     ),

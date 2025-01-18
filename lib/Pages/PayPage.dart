@@ -217,37 +217,43 @@ class PayPage extends StatelessWidget {
                       const SizedBox(height: 250),
                       Padding(
                         padding: const EdgeInsets.all(5.0),
-                        child: Container(
-                          width: 700,
-                          height: 150,
-                          decoration: BoxDecoration(
-                            color: Colors.transparent,
-                            borderRadius: BorderRadius.circular(40.0),
-                            border: Border.all(
-                              color: Colors.white,
-                              width: 5.0,
+                        child: GestureDetector(
+                          onTap: () {
+                            Navigator.of(context).pop();
+                          },
+                          child: Container(
+                            width: 700,
+                            height: 150,
+                            decoration: BoxDecoration(
+                              color: Colors.transparent,
+                              borderRadius: BorderRadius.circular(40.0),
+                              border: Border.all(
+                                color: Colors.white,
+                                width: 5.0,
+                              ),
                             ),
-                          ),
-                          child: Row(
-                            children: [
-                              Expanded(
-                                child: Center(
-                                  child: Text(
-                                    'Отменить заказ',
-                                    style: const TextStyle(
-                                      fontSize: 54,
-                                      fontFamily: 'Montserrat',
-                                      fontWeight: FontWeight.w500,
-                                      color: Colors.white,
+                            child: Row(
+                              children: [
+                                Expanded(
+                                  child: Center(
+                                    child: Text(
+                                      'Отменить заказ',
+                                      style: const TextStyle(
+                                        fontSize: 54,
+                                        fontFamily: 'Montserrat',
+                                        fontWeight: FontWeight.w500,
+                                        color: Colors.white,
+                                      ),
+                                      textAlign: TextAlign.center,
                                     ),
-                                    textAlign: TextAlign.center,
                                   ),
                                 ),
-                              ),
-                            ],
+                              ],
+                            ),
                           ),
                         ),
                       ),
+
                     ],
                   )
                 ),
