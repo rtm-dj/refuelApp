@@ -265,12 +265,3 @@ class PayPage extends StatelessWidget {
     );
   }
 }
-
-void main() {
-  runApp(
-    const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: PayPage(),
-    ),
-  );
-}

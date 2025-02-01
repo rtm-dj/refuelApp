@@ -60,6 +60,9 @@ class HomePage extends StatelessWidget {
                         iconUrl: 'assets/img/bill.png',
                         text: 'ПЕЧАТЬ ЧЕКА ПО ТОПЛИВНОЙ КАРТЕ',
                         type: 2,
+                        onTap: () {
+                          GoRouter.of(context).push('/fuel');
+                        },
                       ),
                     ),
                     const SizedBox(width: 25),
@@ -443,13 +446,4 @@ class HomePage extends StatelessWidget {
   }
 
 
-}
-
-void main() {
-  runApp(
-    const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: HomePage(),
-    ),
-  );
 }
